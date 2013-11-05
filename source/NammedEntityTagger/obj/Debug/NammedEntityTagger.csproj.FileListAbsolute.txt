@@ -1,0 +1,6 @@
+c:\users\coldfront\documents\visual studio 2013\Projects\NammedEntityTagger\NammedEntityTagger\bin\Debug\NammedEntityTagger.exe.config
+c:\users\coldfront\documents\visual studio 2013\Projects\NammedEntityTagger\NammedEntityTagger\bin\Debug\NammedEntityTagger.exe
+c:\users\coldfront\documents\visual studio 2013\Projects\NammedEntityTagger\NammedEntityTagger\bin\Debug\NammedEntityTagger.pdb
+c:\users\coldfront\documents\visual studio 2013\Projects\NammedEntityTagger\NammedEntityTagger\obj\Debug\NammedEntityTagger.csprojResolveAssemblyReference.cache
+c:\users\coldfront\documents\visual studio 2013\Projects\NammedEntityTagger\NammedEntityTagger\obj\Debug\NammedEntityTagger.exe
+c:\users\coldfront\documents\visual studio 2013\Projects\NammedEntityTagger\NammedEntityTagger\obj\Debug\NammedEntityTagger.pdb
