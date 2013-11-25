@@ -5,3 +5,17 @@ c:\users\coldfront\documents\visual studio 2013\Projects\NammedEntityTagger\Unit
 c:\users\coldfront\documents\visual studio 2013\Projects\NammedEntityTagger\UnitTestProject1\bin\Debug\NammedEntityTagger.pdb
 c:\users\coldfront\documents\visual studio 2013\Projects\NammedEntityTagger\UnitTestProject1\obj\Debug\UnitTestProject1.dll
 c:\users\coldfront\documents\visual studio 2013\Projects\NammedEntityTagger\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
+C:\Users\Omid\Desktop\software-project\low-resource-languages\source\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+C:\Users\Omid\Desktop\software-project\low-resource-languages\source\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+C:\Users\Omid\Desktop\software-project\low-resource-languages\source\UnitTestProject1\bin\Debug\NammedEntityTagger.exe
+C:\Users\Omid\Desktop\software-project\low-resource-languages\source\UnitTestProject1\bin\Debug\NammedEntityTagger.pdb
+C:\Users\Omid\Desktop\software-project\low-resource-languages\source\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+C:\Users\Omid\Desktop\software-project\low-resource-languages\source\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+C:\Users\Omid\Desktop\software-project\low-resource-languages\source\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
+E:\Saarland University Courses\software-project\low-resource-languages\source\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+E:\Saarland University Courses\software-project\low-resource-languages\source\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+E:\Saarland University Courses\software-project\low-resource-languages\source\UnitTestProject1\bin\Debug\NammedEntityTagger.exe
+E:\Saarland University Courses\software-project\low-resource-languages\source\UnitTestProject1\bin\Debug\NammedEntityTagger.pdb
+E:\Saarland University Courses\software-project\low-resource-languages\source\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+E:\Saarland University Courses\software-project\low-resource-languages\source\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+E:\Saarland University Courses\software-project\low-resource-languages\source\UnitTestProject1\obj\Debug\UnitTestProject1.pdb

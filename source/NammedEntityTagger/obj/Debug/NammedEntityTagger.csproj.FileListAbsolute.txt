@@ -4,3 +4,15 @@ c:\users\coldfront\documents\visual studio 2013\Projects\NammedEntityTagger\Namm
 c:\users\coldfront\documents\visual studio 2013\Projects\NammedEntityTagger\NammedEntityTagger\obj\Debug\NammedEntityTagger.csprojResolveAssemblyReference.cache
 c:\users\coldfront\documents\visual studio 2013\Projects\NammedEntityTagger\NammedEntityTagger\obj\Debug\NammedEntityTagger.exe
 c:\users\coldfront\documents\visual studio 2013\Projects\NammedEntityTagger\NammedEntityTagger\obj\Debug\NammedEntityTagger.pdb
+C:\Users\Omid\Desktop\software-project\low-resource-languages\source\NammedEntityTagger\bin\Debug\NammedEntityTagger.exe.config
+C:\Users\Omid\Desktop\software-project\low-resource-languages\source\NammedEntityTagger\obj\Debug\NammedEntityTagger.exe
+C:\Users\Omid\Desktop\software-project\low-resource-languages\source\NammedEntityTagger\obj\Debug\NammedEntityTagger.pdb
+C:\Users\Omid\Desktop\software-project\low-resource-languages\source\NammedEntityTagger\bin\Debug\NammedEntityTagger.exe
+C:\Users\Omid\Desktop\software-project\low-resource-languages\source\NammedEntityTagger\bin\Debug\NammedEntityTagger.pdb
+C:\Users\Omid\Desktop\software-project\low-resource-languages\source\NammedEntityTagger\obj\Debug\NammedEntityTagger.csprojResolveAssemblyReference.cache
+E:\Saarland University Courses\software-project\low-resource-languages\source\NammedEntityTagger\bin\Debug\NammedEntityTagger.exe.config
+E:\Saarland University Courses\software-project\low-resource-languages\source\NammedEntityTagger\obj\Debug\NammedEntityTagger.exe
+E:\Saarland University Courses\software-project\low-resource-languages\source\NammedEntityTagger\obj\Debug\NammedEntityTagger.pdb
+E:\Saarland University Courses\software-project\low-resource-languages\source\NammedEntityTagger\bin\Debug\NammedEntityTagger.exe
+E:\Saarland University Courses\software-project\low-resource-languages\source\NammedEntityTagger\bin\Debug\NammedEntityTagger.pdb
+E:\Saarland University Courses\software-project\low-resource-languages\source\NammedEntityTagger\obj\Debug\NammedEntityTagger.csprojResolveAssemblyReference.cache
