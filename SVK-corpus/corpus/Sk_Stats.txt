@@ -1,0 +1,12 @@
+cas.sk	6694
+noveslovo.sk	299
+cassovia.sk	4136
+sme.sk	8622
+pravda.sk	9848
+etrend.sk	6308
+hnonline.sk	288
+blog.sk 9801 (1600 unique blogs)
+blog.sme.sk 39894 (3823 unique blogs)
+blogspot.com  7326 (255 unique blogs)
+wordpress.com 8660 (554 unique blogs)
+twitter.com	103163 (1201 unique users)
