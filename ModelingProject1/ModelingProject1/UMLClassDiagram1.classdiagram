@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="423acd47-6749-436c-adc9-979087d023fa" name="UMLClassDiagram1" linkedPackageId="a1194e1b-31b6-465b-9762-575f053ba61e" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="f6a0c3a0-2827-4d07-9568-46411fbf2884" name="IRuleBasedMechanism" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c1ccb5b2-210b-4d18-aabd-9229aa56823f" />
+        <ownedOperations>
+          <operation Id="480644c5-6f75-4c6c-a076-3de39f3afee5" name="TagLine" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="87a77c17-5f82-4137-bb51-c8f45d715a83" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="bc195767-7aa7-4491-8bf8-4a770175b4f1" name="String" direction="In" isUnique="false">
+                  <elementDefinition Id="4b54f683-68e9-46e7-b90a-387eb5f32422" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="f1c6f5c0-f354-42a5-a88d-8216daa66496" name="LoadResource" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="aee5becd-4ed4-46f4-bdcf-0f15fbd75308" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2a8ec949-c7ea-4f6d-8a9f-2b1d91c207b9" name="String" direction="In" isUnique="false">
+                  <elementDefinition Id="ceb85344-6407-4791-a99b-51d4e1d095c9" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="37c9d4e8-e752-4ce5-bfc9-ca0fe61dd37d" name="AddItem" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="85c0c00a-bc89-4690-9c15-8a8002f4fe81" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9133fd78-a9ca-49b6-85ad-abef50c98189" name="String" direction="In" isUnique="false">
+                  <elementDefinition Id="1deaeb45-960e-490e-9f81-fe3e6e4f537f" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="bbc9fd35-a12b-4140-83a0-5a0c98a1cd80" name="RemoveItem" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f1eb1bd4-d0ac-465f-b9c9-1d44c5c9b0f1" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="49a398e4-c56a-4cb4-a99f-57119c00c7d9" name="String" direction="In" isUnique="false">
+                  <elementDefinition Id="ccc862bf-ff20-4dbb-8037-7c58996bab96" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="d0a9db73-e10b-4990-bde3-9f8c24382123" name="ShowAll" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f1bf1d34-1a7d-4b19-90d3-2e4c9411780a" />
+          </operation>
+          <operation Id="102091db-5991-4117-aff1-b80c35ba01f7" name="ExportToFile" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d97bc396-b06c-4a73-8947-fb6462e3889c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="60388143-2091-4854-9bcf-3a675b6477d0" name="String" direction="In" isUnique="false">
+                  <elementDefinition Id="fc557da2-a805-443a-a570-9c7dfea7bc62" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="ca3a02e5-51ba-4e63-a732-8208bc9baf99" name="IGazetteer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a7f92e72-2b77-4290-aadc-13312e57a8e7" />
+        <generalsInternal>
+          <generalization Id="fb892064-dd45-428e-a720-cca8f4a2ad75" isSubstitutable="false">
+            <interfaceMoniker Id="f6a0c3a0-2827-4d07-9568-46411fbf2884" LastKnownName="IRuleBasedMechanism" />
+            <elementDefinition Id="7bd90eb8-8eda-420e-93d2-4db2338de111" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="bb676b5b-d802-48f6-932f-f4afafad36fe" name="IRegex" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="65914e66-2909-46a4-9829-1fc44286c3b3" />
+        <generalsInternal>
+          <generalization Id="60c1781d-5caa-4639-8c0b-9c8a86d49d15" isSubstitutable="false">
+            <interfaceMoniker Id="f6a0c3a0-2827-4d07-9568-46411fbf2884" LastKnownName="IRuleBasedMechanism" />
+            <elementDefinition Id="2f2d0ca6-b5bf-42d0-84c2-d9c9caddba5b" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="51dea09c-e249-41f0-8600-b88b322c54cf" name="INETagger" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="176d76e4-a775-4c72-84ae-8277cb6c04ea" />
+        <ownedAttributes>
+          <property Id="9bbbf24f-731e-42a6-8302-170b87db119c" name="rbm" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8a6aca86-b6fb-4d2b-b8f1-3cc33be98a18" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="dd9c26dc-b5f5-4e72-a7fc-bb8bb0c1bbb3" LastKnownName="IRuleBasedMechanism" />
+            </type_NamedElement>
+          </property>
+          <property Id="aa1a3a15-5aaf-4def-b89e-65807837434f" name="tagsNumber" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="38e49408-2992-4142-bbf2-38f546297df1" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="463dd75a-b8b8-4b0d-a3ea-364eae68fc18" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="1de77ff9-f060-4f95-9d7f-4c9f5f8017cb" name="corpus" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="611410b9-2b86-4a07-8d51-ea2073a9daf9" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8ccda908-74ab-4e55-86c2-66070d6d5e72" LastKnownName="Collection" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+        <ownedOperations>
+          <operation Id="9fb71e01-7d22-49df-95af-fea743633119" name="TagCorpus" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6c4a40f5-1ee6-4715-a1e3-14d04872f086" />
+          </operation>
+          <operation Id="a4a33802-17e0-469e-89ef-daa031201187" name="ExportToFile" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b6aeae44-8820-40af-ba99-07ad8440c88a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b2931c0c-ddcf-4eab-ba64-7509588c482c" name="String" direction="In" isUnique="false">
+                  <elementDefinition Id="3042ccec-6f8b-4341-a4b3-f6659ec41698" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="967f5918-b981-48da-828d-9507c1eeb967" name="LoadCorpus" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cf20ce68-6398-4f1e-91ee-81bbe4552468" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="de39614c-e9d3-4ac0-893b-575e82d261d2" name="String" direction="In" isUnique="false">
+                  <elementDefinition Id="d66a05db-45cb-4b6c-8465-9ef9c16c3c62" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="dd9c26dc-b5f5-4e72-a7fc-bb8bb0c1bbb3" name="IRuleBasedMechanism" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::IRuleBasedMechanism">
+        <elementDefinition Id="c1ccb5b2-210b-4d18-aabd-9229aa56823f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="463dd75a-b8b8-4b0d-a3ea-364eae68fc18" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="460c6fbd-179f-44eb-a6b3-5d624b848cd3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8ccda908-74ab-4e55-86c2-66070d6d5e72" name="Collection" isAbstract="false" isLeaf="false" cachedFullName="Collection">
+        <elementDefinition Id="08355f6c-2856-4086-a2a7-10f2333dd1ec" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="14f07c78-a228-426d-9e35-5a88d0c712ed" name="PersonTagger" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="963f5df1-9e80-41b8-9d82-fd8de77ebda9" />
+        <suppliersInternal>
+          <interfaceRealization Id="cb14052f-b280-44e6-9fd6-d4813890a776">
+            <interfaceMoniker Id="51dea09c-e249-41f0-8600-b88b322c54cf" LastKnownName="INETagger" />
+            <elementDefinition Id="f316c06d-eea8-4e95-a9cc-b9de33144f75" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="7f8bf201-b6e5-421e-9085-a2db44fbd749" name="TagCorpus" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e2104efb-6b44-4ec5-a78a-fd7a5c411559" />
+          </operation>
+          <operation Id="dc2d89b0-ab82-4fce-bb4a-1d19ccb01457" name="ExportToFile" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7b6d8449-a39f-42f1-80b4-5c747fffa12f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2192bba7-2613-4f77-bdfb-9ae79d9e4fbe" name="String" direction="In" isUnique="false">
+                  <elementDefinition Id="8383f1d6-c626-46ff-9fd7-888fcf194e50" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="d337927b-aebd-4bd8-b44f-7d75d01d8ab9" name="LoadCorpus" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="afadccd3-0aab-453b-bc64-2453f6111ed3" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7349fbba-d87e-44d6-8fd7-5cf3ce2aecf3" name="String" direction="In" isUnique="false">
+                  <elementDefinition Id="de4b35bc-95c2-43bf-947a-54d24dc0670a" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e3fcd30f-3a5d-44ab-8150-29b1691318fc" name="LocationTagger" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="80ec29d9-a2b7-43b5-b983-cc22804b993d" />
+        <suppliersInternal>
+          <interfaceRealization Id="4901f1bd-0c95-4749-b246-a4982587577b">
+            <interfaceMoniker Id="51dea09c-e249-41f0-8600-b88b322c54cf" LastKnownName="INETagger" />
+            <elementDefinition Id="d092e492-66b1-491e-9b48-d4303fe18872" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="85ff0ff1-1001-49ad-a164-905342b692b0" name="TagCorpus" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b54b823b-2b14-4429-ad5d-62eea3b7b655" />
+          </operation>
+          <operation Id="330c79d9-15ac-433e-b350-ef99353cb81d" name="ExportToFile" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1979162a-3fe7-49af-a59e-67eb6437265b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8d6970b6-287b-4fa6-a506-ecf6f503842a" name="String" direction="In" isUnique="false">
+                  <elementDefinition Id="9ad0316e-3b6e-46a8-a633-bb820e5789bc" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="fda4feb9-606f-41d5-a9c2-ec3ce34b8e6b" name="LoadCorpus" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f0ab1d5e-a275-4e81-9573-2c71161591a2" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2008dc6b-3896-468a-8b48-e63cf9e7bfde" name="String" direction="In" isUnique="false">
+                  <elementDefinition Id="5179bb27-b050-4215-b7fe-ccd2a126ad3c" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ab63b27e-db0c-404f-95cd-3fa59e75335b" name="TimeTagger" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="475d454e-367c-4c0c-838b-fc562d4646c5" />
+        <suppliersInternal>
+          <interfaceRealization Id="2535ebb4-1672-4389-9f57-4885d3d87d86">
+            <interfaceMoniker Id="51dea09c-e249-41f0-8600-b88b322c54cf" LastKnownName="INETagger" />
+            <elementDefinition Id="1fa0c0f1-92f5-4ad3-8f3d-53e653cd29f7" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="870befec-9d20-4616-8ad2-2deb2219e948" name="TagCorpus" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="382096d3-874c-46f6-9196-5d0f2894ede1" />
+          </operation>
+          <operation Id="9a631df1-2850-4850-a7f0-99f4cb5c151a" name="ExportToFile" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="04e667c6-3b6b-40e5-95f7-aa65989fff69" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="35dc028e-64f7-4e8d-973c-eb089bde46b0" name="String" direction="In" isUnique="false">
+                  <elementDefinition Id="c3e6d769-67af-4334-9286-251f56aa0f20" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="043a3223-a95c-41d8-b053-296b5f4e7502" name="LoadCorpus" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ecfb163d-0f71-4bd2-ab67-e94dfdd5639d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3cf2231c-4ecd-4c41-9a34-117eed5cb54d" name="String" direction="In" isUnique="false">
+                  <elementDefinition Id="b719c25b-69c4-4730-8179-3401f2121f4a" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="a1194e1b-31b6-465b-9762-575f053ba61e" name="ModelingProject1">
+    <elementDefinition Id="6ea58904-0580-49c0-8772-0456880ace31" />
+    <profileInstances>
+      <packageHasProfileInstances Id="c3d3406b-35e8-47cc-bbcc-256cc648f743">
+        <profileInstance Id="e4199fe5-f091-4cfc-824c-c73f8a9bbb3c" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c24e0450-3a1e-495c-a02d-881d8faea8d3">
+        <profileInstance Id="36b96beb-b54d-40a2-b6bf-d54b74ab6197" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

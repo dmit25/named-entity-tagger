@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "NETaggerStructure", "ModelingProject1\NETaggerStructure.modelproj", "{416AE4E1-2026-4D4B-A895-DE12B2CAD781}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{416AE4E1-2026-4D4B-A895-DE12B2CAD781}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{416AE4E1-2026-4D4B-A895-DE12B2CAD781}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{416AE4E1-2026-4D4B-A895-DE12B2CAD781}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{416AE4E1-2026-4D4B-A895-DE12B2CAD781}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
