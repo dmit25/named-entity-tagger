@@ -256,6 +256,204 @@
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="249a26bd-1034-4898-b345-2b94a79dc235" name="LocationGazetteer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="25042808-df46-4367-9139-8b9478e2560c" />
+        <suppliersInternal>
+          <interfaceRealization Id="7f6d9807-a6aa-41b2-83a8-357b778d51be">
+            <interfaceMoniker Id="ca3a02e5-51ba-4e63-a732-8208bc9baf99" LastKnownName="IGazetteer" />
+            <elementDefinition Id="09253505-df49-4339-a785-aaa2d59c5079" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="037fbaaa-ae6e-4e1d-ade4-fe092d09d2d0" name="TagLine" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="41122000-46dc-4aae-ad71-16d6916f7487" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4b06aeeb-7e78-415b-b72c-dbcca8531e89" name="String" direction="In" isUnique="false">
+                  <elementDefinition Id="f8b02f9b-85c3-4c22-a662-1b219a546ee6" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="6ca9ce27-a917-4a4f-9878-b6ed502c7651" name="LoadResource" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="561b2c80-1b92-4ff9-b9df-8b865d9ad306" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e2a7744e-7712-4533-86e9-8cc79cce219c" name="String" direction="In" isUnique="false">
+                  <elementDefinition Id="c7aae179-1660-483b-84d6-60b12873bd3b" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="31070ca7-a417-4109-9716-31237968f4d5" name="AddItem" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="321ecccd-67b2-4b14-871b-b8a1dfdb04ea" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5ede5825-b83c-4c60-805b-eeb32c64d718" name="String" direction="In" isUnique="false">
+                  <elementDefinition Id="ce2b0173-17ab-46bc-b312-21c957bf37f9" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="1d0d6246-3839-4332-8c3d-8962e65dc9ad" name="RemoveItem" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9332eae0-74e1-4edd-8eb4-bec29754fde3" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d144d81e-08c1-431d-aaf7-815a0e617093" name="String" direction="In" isUnique="false">
+                  <elementDefinition Id="bd30e1b1-9ac6-4d06-8cdf-f7225f2e8876" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="31e3b88f-178a-4cc2-b301-2cc933099d21" name="ShowAll" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1fee5e7f-f5a5-4e75-9fc3-0513fe008ed8" />
+          </operation>
+          <operation Id="2f1abe36-9c55-4591-8cb3-197a30c329b9" name="ExportToFile" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c3bb5eda-24c6-451d-96bf-e1f38f41b57e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="acc666ac-7ce4-4f43-84e9-bd69ddfd6987" name="String" direction="In" isUnique="false">
+                  <elementDefinition Id="6b163bdd-e72d-4694-b199-cc3c7d653744" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="da1ecf36-6bbc-48b3-bca3-c555ced156d2" name="TimeRegex" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b5dbeb9d-840e-49b8-af56-8482990fdb3d" />
+        <suppliersInternal>
+          <interfaceRealization Id="ac66ccb9-35f7-4782-9c00-a171a42735be">
+            <interfaceMoniker Id="bb676b5b-d802-48f6-932f-f4afafad36fe" LastKnownName="IRegex" />
+            <elementDefinition Id="699a0faf-a253-4a90-8bf9-fdb5f0ffb1e6" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="91f3c3d9-cf0e-4dbe-a4a4-4a82da3bcd70" name="TagLine" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bb7d359c-5192-4c53-9a96-5e3febdadbea" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e9c4598e-bdb5-4f06-88a7-2350a14f2cc2" name="String" direction="In" isUnique="false">
+                  <elementDefinition Id="89bcc583-1aea-4008-8dfe-2f051fb3d1e1" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="107c7f54-4263-4cfb-a345-57b655b7479c" name="LoadResource" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9af0a23e-c439-4667-b2e3-1f8ce1496c74" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9aec27c9-183d-46a6-8e78-2425c9a38bdf" name="String" direction="In" isUnique="false">
+                  <elementDefinition Id="92129c89-7428-4e20-9e9f-221c8a242d6a" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="9d9da4ad-512e-495d-9373-914f4a69c76f" name="AddItem" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e0374a47-16d3-4496-92a5-730165132475" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="36880695-00b1-4dce-93a3-41204ee987c7" name="String" direction="In" isUnique="false">
+                  <elementDefinition Id="152d5c47-87b7-4c9f-a18d-421d659157c3" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="caa455ef-7737-4fc3-adbf-3617af014958" name="RemoveItem" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="09e2733d-4258-4acf-aeda-44408eec9f12" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="21117ee2-9b8d-4770-9ae1-f3403c79ab41" name="String" direction="In" isUnique="false">
+                  <elementDefinition Id="c4291a07-11af-4330-aff7-63c0ecf45981" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="c3865bbf-84ec-40e7-9ba0-a8779e3b0048" name="ShowAll" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="829033ca-7fe4-425f-84aa-7c73b7d37d6d" />
+          </operation>
+          <operation Id="6e15a674-91bf-4264-90d4-4f7d147e4ea2" name="ExportToFile" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1ee25a79-35f1-4dc1-96ee-298378c42412" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2252e70c-4f51-4cd4-948c-05dd7ed5c0d8" name="String" direction="In" isUnique="false">
+                  <elementDefinition Id="1dd8567d-8c68-4ae7-9661-78c86eb7c4b2" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2c8946c4-c7c8-4d10-846a-71e1bc772256" name="PersonGazetteer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b557fb80-02ca-4746-aa21-53bfd1963413" />
+        <suppliersInternal>
+          <interfaceRealization Id="24a207f2-2b5c-4357-8e62-cffbbb0f2adb">
+            <interfaceMoniker Id="ca3a02e5-51ba-4e63-a732-8208bc9baf99" LastKnownName="IGazetteer" />
+            <elementDefinition Id="3cce54d7-724c-423e-81c0-a24ae7658ecb" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="af9e871a-f583-430d-8ff0-1aa5f13a2689" name="TagLine" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ee3c48f2-7ba6-4a4c-8389-016a9cd8cd6b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e6c5eee4-3fc0-4d5f-8ceb-7c14e9582548" name="String" direction="In" isUnique="false">
+                  <elementDefinition Id="c66cef94-dea6-4541-bf4f-f41a37c40e6c" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="c00fb8b8-3ea0-4963-8f1a-eabb46782499" name="LoadResource" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e0098024-663f-4df7-9226-95fd836a5d07" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1120e42d-cc5d-406c-b02f-ca4ef220421c" name="String" direction="In" isUnique="false">
+                  <elementDefinition Id="d35cf13c-58ec-4096-a54c-a26b609a4c6a" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="cd462064-6ada-4ba5-90e8-c8b9ba61d929" name="AddItem" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bc9d477a-9549-4fd5-8f8d-28ed365e5abe" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c560b3f5-78dd-4c3c-9cce-520dce398774" name="String" direction="In" isUnique="false">
+                  <elementDefinition Id="e8ee75a0-54ca-47e4-93af-85e75446e06f" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="63563757-15ee-4be4-b2ab-3b454dfd66ba" name="RemoveItem" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0503d5b4-6bc2-42de-a2ab-76c74d907082" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="45c407a6-289c-45e6-8c05-ebac96dad225" name="String" direction="In" isUnique="false">
+                  <elementDefinition Id="5ff1dc02-3e68-46b5-a95a-0aae4e724ef8" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="41026af1-e20a-4189-a251-7d8298a06a84" name="ShowAll" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3a7f5559-3087-4f41-bf6f-cd702fd9fcfe" />
+          </operation>
+          <operation Id="c6d2d13b-6325-4e76-b208-f4a223091208" name="ExportToFile" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5ef24d24-7b43-4933-942f-66e3288aeaac" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="68079d82-1f2f-47c7-bb96-96d1b2ef66cc" name="String" direction="In" isUnique="false">
+                  <elementDefinition Id="3cf5e8e2-fefe-47ef-a80a-8f3cae7fd986" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="a1194e1b-31b6-465b-9762-575f053ba61e" name="ModelingProject1">
     <elementDefinition Id="6ea58904-0580-49c0-8772-0456880ace31" />
