@@ -37,7 +37,7 @@ namespace NER_SPLRL
                     taggedtext += lg.TagLine(el) + "\n";
                 }
 
-                taggedht.Add(it.Key, filetext);
+                taggedht.Add(it.Key, taggedtext);
 
             }
             corpus = taggedht;

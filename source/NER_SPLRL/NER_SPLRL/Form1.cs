@@ -28,10 +28,10 @@ namespace NER_SPLRL
 
         private void SlovakLocationTaggerButton_Click(object sender, EventArgs e)
         {
-            //SlovakLocationTagger plt = new SlovakLocationTagger();
-            //plt.loadCorpus("");
-            //plt.tagCorpus();
-            //plt.saveCorpus("");
+            SlovakLocationTagger plt = new SlovakLocationTagger();
+            plt.loadCorpus(@"C:\Users\Omid\Desktop\slovak-text.txt");
+            plt.tagCorpus();
+            plt.saveCorpus(@"C:\Users\Omid\Desktop\slovak-text-tagged.txt");
 
         }
     }

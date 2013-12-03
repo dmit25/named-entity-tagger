@@ -33,7 +33,7 @@ namespace NER_SPLRL
 
                 foreach(string el in ftar)
                 {
-                     taggedtext += lg.TagLine(el) + "\n";
+                     taggedtext += lg.TagLinePersian(el) + "\n";
                 }
 
                 taggedht.Add(it.Key, filetext);

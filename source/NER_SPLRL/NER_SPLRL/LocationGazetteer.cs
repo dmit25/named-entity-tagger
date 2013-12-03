@@ -44,6 +44,7 @@ namespace NER_SPLRL
             return Locations;
         }
 
+        //levenestein distance approach
         public string TagLine2(string line)
         {
             string copyLine = line;
@@ -109,6 +110,8 @@ namespace NER_SPLRL
             return copyLine;
         }
 
+
+        //Michal method
         public string TagLine(string line)
         {
             string copyLine = line;
@@ -189,6 +192,38 @@ namespace NER_SPLRL
                 foreach (string item in Locations)
                     sw.WriteLine(item);
             }
+        }
+
+        public string TagLinePersian(string line)
+        {
+            string copyLine = line;
+            HashSet<string> foundCountries = new HashSet<string>();
+
+            foreach (string country in Locations)
+            {
+                while (line.Length > 0)
+                {
+                    // indexes of start and end of the word
+                    int index = line.IndexOf(country, StringComparison.OrdinalIgnoreCase);
+
+                    if (index == -1)
+                    {
+                        //sw.WriteLine(output);
+                        break;
+                    }
+
+                    foundCountries.Add(country);
+                }
+
+                int i = 0;
+            }
+
+            foreach (string country in foundCountries)
+            {
+                copyLine = Regex.Replace(copyLine, String.Format(@"\b{0}\b", country), "<= " + country + " =>");
+            }
+
+            return copyLine;
         }
     }
 }
