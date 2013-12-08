@@ -21,17 +21,17 @@ namespace NER_SPLRL
         private void button1_Click(object sender, EventArgs e)
         {
             PersianLocationTagger plt = new PersianLocationTagger();
-            plt.loadCorpus(@"C:\Users\Omid\Desktop\file(9).txt");
-            plt.tagCorpus();
-            plt.saveCorpus(@"C:\Users\Omid\Desktop\file(9)-t.txt");
+            plt.LoadCorpus(@"C:\Users\Omid\Desktop\file(9).txt");
+            plt.TagCorpus();
+            plt.SaveCorpus(@"C:\Users\Omid\Desktop\file(9)-t.txt");
         }
 
         private void SlovakLocationTaggerButton_Click(object sender, EventArgs e)
         {
             SlovakLocationTagger plt = new SlovakLocationTagger();
-            plt.loadCorpus(@"C:\Users\Omid\Desktop\slovak-text.txt");
-            plt.tagCorpus();
-            plt.saveCorpus(@"C:\Users\Omid\Desktop\slovak-text-tagged.txt");
+            plt.LoadCorpus(@"C:\Users\Omid\Desktop\slovak-text.txt");
+            plt.TagCorpus();
+            plt.SaveCorpus(@"C:\Users\Omid\Desktop\slovak-text-tagged.txt");
 
         }
     }

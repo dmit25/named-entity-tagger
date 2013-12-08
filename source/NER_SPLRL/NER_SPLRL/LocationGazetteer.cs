@@ -7,6 +7,10 @@ using System.Text.RegularExpressions;
 
 namespace NER_SPLRL
 {
+    /**
+     * This class is obsolete. 
+     */
+
     public class LocationGazetteer : IGazetteer
     {
         IList<string> Locations { get; set; }

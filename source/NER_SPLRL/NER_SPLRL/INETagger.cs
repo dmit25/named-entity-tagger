@@ -11,13 +11,15 @@ namespace NER_SPLRL
 {
     public abstract class INETagger
     {
-        public Hashtable corpus = new Hashtable();
-        public IRuleBasedMechanism rbm;
-        public int tagsNumber;
+        protected string corpusText = "";
+        private string corpusAddress = "";
+        private IRuleBasedMechanism rbm;
+        private int tagsNumber;
 
         //This method could be called several times to add more than one file to the corpus.
-        public void loadCorpus(string fileAddress)
+        public void LoadCorpus(string fileAddress)
         {
+
 
             try
             {
@@ -25,7 +27,9 @@ namespace NER_SPLRL
 
                 text = " " + text.Replace("\n", "\n ");
 
-                corpus.Add(fileAddress, text);
+                corpusText = text;
+
+                fileAddress = corpusAddress; 
 
             }
             catch (IOException)
@@ -34,31 +38,23 @@ namespace NER_SPLRL
 
         }
 
-        public void loadCorpus(Hashtable co)
-        {
-            this.corpus = co;
-        }
-
         //This method ignores the filename in the parameter. just uses the absolute address.
-        public void saveCorpus(string fileAddress)
+        public void SaveCorpus(string fileAddress)
         {
-            foreach (DictionaryEntry item in corpus)
-            {
 
-                string name = ((string)item.Key);
+            string name = corpusAddress;
                 //fileAddress = fileAddress.Substring(0, name.LastIndexOf('\\') + 1) + name + "-tagged.txt";
 
                 System.IO.TextWriter fs = new StreamWriter(fileAddress, false, Encoding.Unicode);
 
-                fs.Write((string)item.Value);
+                fs.Write(corpusText);
 
 
                 fs.Close();
-            }
-
+            
         }
 
-        public abstract void tagCorpus();
+        public abstract void TagCorpus();
 
     }
 }

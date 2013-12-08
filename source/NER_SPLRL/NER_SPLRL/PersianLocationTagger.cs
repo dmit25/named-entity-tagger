@@ -9,38 +9,32 @@ namespace NER_SPLRL
 {
     public class PersianLocationTagger: INETagger
     {
-        public LocationGazetteer lg;
+        private LocationGazetteerPER lg;
 
         public PersianLocationTagger()
         {
-            this.lg = new LocationGazetteer();
+            this.lg = new LocationGazetteerPER();
             lg.LoadResources(@"E:\Saarland University Courses\software-project\low-resource-languages\WORD LISTS\Persian\cities.txt");
             lg.LoadResources(@"E:\Saarland University Courses\software-project\low-resource-languages\WORD LISTS\Persian\countries.txt");
 
 
         }
 
-        public override void tagCorpus()
+        public override void TagCorpus()
         {
-            Hashtable taggedht = new Hashtable();
+            
+            string filetext = corpusText;
+            string taggedtext = "";
 
-            foreach (DictionaryEntry it in corpus)
+            string[] ftar = filetext.Split("\n".ToCharArray(), StringSplitOptions.None);
+
+            foreach (string el in ftar)
             {
-                string filetext = (string)it.Value;
-                string taggedtext = "";
-
-                string[] ftar = filetext.Split("\n".ToCharArray(), StringSplitOptions.None);
-
-                foreach(string el in ftar)
-                {
-                     taggedtext += lg.TagLinePersian(el) + "\n";
-                }
-
-                taggedht.Add(it.Key, filetext);
-               
+                taggedtext += lg.TagLine(el) + "\n";
             }
-            corpus = taggedht;
-          
+
+            corpusText = taggedtext;
+
         }
 
     }

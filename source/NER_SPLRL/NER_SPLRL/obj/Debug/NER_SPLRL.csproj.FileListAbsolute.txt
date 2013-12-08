@@ -15,3 +15,12 @@ E:\Saarland University Courses\software-project\codes\ner-splrl\NER_SPLRL\NER_SP
 E:\Saarland University Courses\software-project\codes\ner-splrl\NER_SPLRL\NER_SPLRL\obj\Debug\NER_SPLRL.csproj.GenerateResource.Cache
 E:\Saarland University Courses\software-project\codes\ner-splrl\NER_SPLRL\NER_SPLRL\bin\Debug\NER_SPLRL.exe
 E:\Saarland University Courses\software-project\codes\ner-splrl\NER_SPLRL\NER_SPLRL\bin\Debug\NER_SPLRL.pdb
+C:\Users\Omid\Desktop\rrrr\NER_SPLRL\NER_SPLRL\bin\Debug\NER_SPLRL.exe.config
+C:\Users\Omid\Desktop\rrrr\NER_SPLRL\NER_SPLRL\obj\Debug\NER_SPLRL.exe
+C:\Users\Omid\Desktop\rrrr\NER_SPLRL\NER_SPLRL\obj\Debug\NER_SPLRL.pdb
+C:\Users\Omid\Desktop\rrrr\NER_SPLRL\NER_SPLRL\obj\Debug\NER_SPLRL.csprojResolveAssemblyReference.cache
+C:\Users\Omid\Desktop\rrrr\NER_SPLRL\NER_SPLRL\obj\Debug\NER_SPLRL.Form1.resources
+C:\Users\Omid\Desktop\rrrr\NER_SPLRL\NER_SPLRL\obj\Debug\NER_SPLRL.Properties.Resources.resources
+C:\Users\Omid\Desktop\rrrr\NER_SPLRL\NER_SPLRL\obj\Debug\NER_SPLRL.csproj.GenerateResource.Cache
+C:\Users\Omid\Desktop\rrrr\NER_SPLRL\NER_SPLRL\bin\Debug\NER_SPLRL.exe
+C:\Users\Omid\Desktop\rrrr\NER_SPLRL\NER_SPLRL\bin\Debug\NER_SPLRL.pdb

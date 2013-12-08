@@ -9,39 +9,33 @@ namespace NER_SPLRL
 {
     class SlovakLocationTagger : INETagger
     {
-        public LocationGazetteer lg;
+        private LocationGazetteerSVK lg;
 
         public SlovakLocationTagger()
         {
-            this.lg = new LocationGazetteer();
+            this.lg = new LocationGazetteerSVK();
             lg.LoadResources(@"E:\Saarland University Courses\software-project\low-resource-languages\WORD LISTS\Slovak\Sk_Cities.txt");
             lg.LoadResources(@"E:\Saarland University Courses\software-project\low-resource-languages\WORD LISTS\Slovak\Sk_Countries.txt");
 
 
         }
 
-
-        public override void tagCorpus()
+        public override void TagCorpus()
         {
-            Hashtable taggedht = new Hashtable();
 
-            foreach (DictionaryEntry it in corpus)
+            string filetext = corpusText;
+            string taggedtext = "";
+
+            string[] ftar = filetext.Split("\n".ToCharArray(), StringSplitOptions.None);
+
+            foreach (string el in ftar)
             {
-                string filetext = (string)it.Value;
-                string taggedtext = "";
-
-                string[] ftar = filetext.Split("\n".ToCharArray(), StringSplitOptions.None);
-
-                foreach (string el in ftar)
-                {
-                    taggedtext += lg.TagLine(el) + "\n";
-                }
-
-                taggedht.Add(it.Key, taggedtext);
-
+                taggedtext += lg.TagLine(el) + "\n";
             }
-            corpus = taggedht;
+
+            corpusText = taggedtext;
 
         }
+        
     }
 }
