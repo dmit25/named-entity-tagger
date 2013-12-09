@@ -55,13 +55,16 @@
     <Compile Include="IRegex.cs" />
     <Compile Include="IRuleBasedMechanism.cs" />
     <Compile Include="LevenshteinDistance.cs" />
-    <Compile Include="LocationGazetteer.cs" />
     <Compile Include="LocationGazetteerPER.cs" />
     <Compile Include="LocationGazetteerSVK.cs" />
     <Compile Include="PersianLocationTagger.cs" />
+    <Compile Include="PersianPersonTagger.cs" />
+    <Compile Include="PersonGazetteerPER.cs" />
+    <Compile Include="PersonGazetteerSVK.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SlovakLocationTagger.cs" />
+    <Compile Include="SlovakPersonTagger.cs" />
     <Compile Include="TimeRegex.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

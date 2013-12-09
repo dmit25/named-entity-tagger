@@ -24,3 +24,12 @@ C:\Users\Omid\Desktop\rrrr\NER_SPLRL\NER_SPLRL\obj\Debug\NER_SPLRL.Properties.Re
 C:\Users\Omid\Desktop\rrrr\NER_SPLRL\NER_SPLRL\obj\Debug\NER_SPLRL.csproj.GenerateResource.Cache
 C:\Users\Omid\Desktop\rrrr\NER_SPLRL\NER_SPLRL\bin\Debug\NER_SPLRL.exe
 C:\Users\Omid\Desktop\rrrr\NER_SPLRL\NER_SPLRL\bin\Debug\NER_SPLRL.pdb
+E:\Saarland University Courses\software-project\low-resource-languages\source\NER_SPLRL\NER_SPLRL\bin\Debug\NER_SPLRL.exe.config
+E:\Saarland University Courses\software-project\low-resource-languages\source\NER_SPLRL\NER_SPLRL\obj\Debug\NER_SPLRL.exe
+E:\Saarland University Courses\software-project\low-resource-languages\source\NER_SPLRL\NER_SPLRL\obj\Debug\NER_SPLRL.pdb
+E:\Saarland University Courses\software-project\low-resource-languages\source\NER_SPLRL\NER_SPLRL\obj\Debug\NER_SPLRL.csprojResolveAssemblyReference.cache
+E:\Saarland University Courses\software-project\low-resource-languages\source\NER_SPLRL\NER_SPLRL\obj\Debug\NER_SPLRL.Form1.resources
+E:\Saarland University Courses\software-project\low-resource-languages\source\NER_SPLRL\NER_SPLRL\obj\Debug\NER_SPLRL.Properties.Resources.resources
+E:\Saarland University Courses\software-project\low-resource-languages\source\NER_SPLRL\NER_SPLRL\obj\Debug\NER_SPLRL.csproj.GenerateResource.Cache
+E:\Saarland University Courses\software-project\low-resource-languages\source\NER_SPLRL\NER_SPLRL\bin\Debug\NER_SPLRL.exe
+E:\Saarland University Courses\software-project\low-resource-languages\source\NER_SPLRL\NER_SPLRL\bin\Debug\NER_SPLRL.pdb

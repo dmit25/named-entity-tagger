@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,22 +6,23 @@ using System.Threading.Tasks;
 
 namespace NER_SPLRL
 {
-    public class PersianLocationTagger: INETagger
+    class SlovakPersonTagger: INETagger
     {
+
         private IRuleBasedMechanism lg;
 
-        public PersianLocationTagger()
+        public SlovakPersonTagger()
         {
-            this.lg = new LocationGazetteerPER();
-            lg.LoadResources(@"E:\Saarland University Courses\software-project\low-resource-languages\WORD LISTS\Persian\cities.txt");
-            lg.LoadResources(@"E:\Saarland University Courses\software-project\low-resource-languages\WORD LISTS\Persian\countries.txt");
+            this.lg = new PersonGazetteerSVK();
+            lg.LoadResources(@"E:\Saarland University Courses\software-project\low-resource-languages\WORD LISTS\Slovak\Sk_FE_names.txt");
+            lg.LoadResources(@"E:\Saarland University Courses\software-project\low-resource-languages\WORD LISTS\Slovak\Sk_MA_names.txt");
 
 
         }
 
         public override void TagCorpus()
         {
-            
+
             string filetext = corpusText;
             string taggedtext = "";
 
@@ -36,6 +36,6 @@ namespace NER_SPLRL
             corpusText = taggedtext;
 
         }
-
+        
     }
 }

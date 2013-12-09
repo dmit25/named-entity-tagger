@@ -34,5 +34,24 @@ namespace NER_SPLRL
             plt.SaveCorpus(@"C:\Users\Omid\Desktop\slovak-text-tagged.txt");
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            PersianPersonTagger plt = new PersianPersonTagger();
+            plt.LoadCorpus(@"C:\Users\Omid\Desktop\file(9).txt");
+            plt.TagCorpus();
+            plt.SaveCorpus(@"C:\Users\Omid\Desktop\file(9)-pt.txt");
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            SlovakPersonTagger plt = new SlovakPersonTagger();
+            plt.LoadCorpus(@"C:\Users\Omid\Desktop\slovak-text.txt");
+            plt.TagCorpus();
+            plt.SaveCorpus(@"C:\Users\Omid\Desktop\slovak-text-ptagged.txt");
+
+
+        }
     }
 }

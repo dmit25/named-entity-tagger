@@ -9,45 +9,16 @@ using System.Windows.Forms;
 
 namespace NER_SPLRL
 {
-    class TimeRegex
+    class TimeRegex: IRegex
     {
 
-        private IList<string> patterns { get; set; }
-
-        public TimeRegex()
+       
+        public TimeRegex():base()
         {
-            patterns = new List<string>();
+            
         }
 
-        public bool AddItem(string item)
-        {
-            if (patterns.Contains(item))
-                return false;
-
-            patterns.Add(item);
-            return true;
-        }
-
-        public bool RemoveItem(string item)
-        {
-            return patterns.Remove(item);
-        }
-
-        public void LoadResources(string fileName)
-        {
-            using (StreamReader sr = new StreamReader(fileName))
-            {
-                while (sr.Peek() >= 0)
-                    patterns.Add(sr.ReadLine());
-            }
-        }
-
-        public IEnumerable<string> ShowAll()
-        {
-            return patterns;
-        }
-
-        public string TagLine(string line)
+        public override string TagLine(string line)
         {
             // copy of input parameter (line)
             string copyLine = line;
@@ -165,16 +136,6 @@ namespace NER_SPLRL
             return copyLine;
         }
 
-        public void ExportToFile(string fileName)
-        {
-            using (StreamWriter sw = new StreamWriter(fileName))
-            {
-                foreach (string item in patterns)
-                    sw.WriteLine(item);
-            }
-        }
-
-
-
+        
     }
 }

@@ -9,8 +9,10 @@ namespace NER_SPLRL
 {
     class LocationGazetteerSVK : IGazetteer
     {
-        // store all locations
-        private IList<string> Locations { get; set; }
+
+        private const string TAG_START = "<[LOCATION:";
+        private const string TAG_END = "]>";
+
 
         // suffixes of adjectives in singular
         private readonly IList<string> ILLEGAL_ENDING_SUFFIXES = new List<string>()
@@ -29,45 +31,17 @@ namespace NER_SPLRL
         };
 
 
-        public LocationGazetteerSVK()
+        public LocationGazetteerSVK():base()
         {
-            Locations = new List<string>();
+            
         }
 
-        public bool AddItem(string item)
-        {
-            if (Locations.Contains(item))
-                return false;
-
-            Locations.Add(item);
-            return true;
-        }
-
-        public bool RemoveItem(string item)
-        {
-            return Locations.Remove(item);
-        }
-
-        public void LoadResources(string fileName)
-        {
-            using (StreamReader sr = new StreamReader(fileName))
-            {
-                while (sr.Peek() >= 0)
-                    AddItem(sr.ReadLine());
-            }
-        }
-
-        public IEnumerable<string> ShowAll()
-        {
-            return Locations;
-        }
-
-        public string TagLine(string line)
+        public override string TagLine(string line)
         {
             // copy of input parameter (line)
             string copyLine = line;
 
-            foreach (string country in Locations)
+            foreach (string country in ItemList)
             {
                 // match only whole words with all suffixes, which length is less 4
                 MatchCollection matches = Regex.Matches(line, "\\b" + country.Substring(0, country.Length - 1) + "(\\w){1,3}\\b");
@@ -83,20 +57,12 @@ namespace NER_SPLRL
                 foreach (var foundLocation in set)
                 {
                     if (!ILLEGAL_ENDING_SUFFIXES.Contains(foundLocation.Substring(country.Length - 1)))
-                        copyLine = copyLine.Replace(foundLocation, "<= " + foundLocation + " =>");
+                        copyLine = copyLine.Replace(foundLocation, TAG_START + foundLocation + TAG_END);
                 }
             }
 
             return copyLine;
         }
 
-        public void ExportToFile(string fileName)
-        {
-            using (StreamWriter sw = new StreamWriter(fileName))
-            {
-                foreach (string item in Locations)
-                    sw.WriteLine(item);
-            }
-        }
     }
 }

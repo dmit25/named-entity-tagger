@@ -9,7 +9,7 @@ namespace NER_SPLRL
 {
     class SlovakLocationTagger : INETagger
     {
-        private LocationGazetteerSVK lg;
+        private IRuleBasedMechanism lg;
 
         public SlovakLocationTagger()
         {
