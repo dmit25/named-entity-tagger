@@ -16,6 +16,7 @@ namespace NER_SPLRL
         private readonly IList<string> ILLEGAL_ENDING_SUFFIXES = new List<string>()
         {
             "ý",
+            "í",
             "ého",
             "ému",
             "ým",
