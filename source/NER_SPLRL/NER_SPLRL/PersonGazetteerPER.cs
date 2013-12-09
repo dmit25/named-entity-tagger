@@ -23,19 +23,22 @@ namespace NER_SPLRL
         public override string TagLine(string line)
         {
             // copy of input parameter (line)
-            string copyLine = line;
+            //string copyLine = line;
 
             // match only whole words
             foreach (string person in ItemList)
             {
-                MatchCollection matches = Regex.Matches(line, String.Format(@"\b{0}\b", person));
+               //MatchCollection matches = Regex.Matches(line, String.Format(@"\b{0}\b", person));
+
+                Regex exp = new Regex(String.Format(@"\b{0}\b", person));
+                line = exp.Replace(line, TAG_START + person + TAG_END);
 
                 // replace all occurences of found location
-                if (matches.Count != 0)
-                    copyLine = copyLine.Replace(String.Format(@"\b{0}\b", person), String.Format(@"\b{0}\b",TAG_START + person + TAG_END));
+                //if (matches.Count != 0)
+               //     copyLine = copyLine.Replace(String.Format(@"\b{0}\b", person), String.Format(@"\b{0}\b",TAG_START + person + TAG_END));
             }
 
-            return copyLine;
+            return line;
         }
 
     }
