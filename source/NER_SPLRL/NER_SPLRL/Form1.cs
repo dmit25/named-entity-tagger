@@ -23,7 +23,7 @@ namespace NER_SPLRL
             PersianLocationTagger plt = new PersianLocationTagger();
             plt.LoadCorpus(@"C:\Users\Omid\Desktop\file(9).txt");
             plt.TagCorpus();
-            plt.SaveCorpus(@"C:\Users\Omid\Desktop\file(9)-t.txt");
+            plt.SaveCorpus(@"C:\Users\Omid\Desktop\file(9)-lt.txt");
         }
 
         private void SlovakLocationTaggerButton_Click(object sender, EventArgs e)
@@ -52,6 +52,20 @@ namespace NER_SPLRL
             plt.SaveCorpus(@"C:\Users\Omid\Desktop\slovak-text-ptagged.txt");
 
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            PersianTimeTagger ptt = new PersianTimeTagger();
+            ptt.LoadCorpus(@"C:\Users\Omid\Desktop\file(9).txt");
+            ptt.TagCorpus();
+            ptt.SaveCorpus(@"C:\Users\Omid\Desktop\file(9)-tt.txt");
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //todo
         }
     }
 }

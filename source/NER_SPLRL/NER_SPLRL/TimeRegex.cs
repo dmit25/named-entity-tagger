@@ -25,7 +25,7 @@ namespace NER_SPLRL
 
             List<string> results = new List<string>();
 
-            bool matchWholePattern = false; //todoooooooooo
+            bool matchWholePattern = true; //todoooooooooo
 
             foreach (string p in patterns)
             {
@@ -118,21 +118,22 @@ namespace NER_SPLRL
                     {
                         continue;
                     }
-
-                    if (matchWholePattern)
-                    {
-                        copyLine = copyLine.Replace(item, " <[TEMPORALEXP:" + item.Trim() + "]> ");
-                    }
-                    else
-                    {
-                        copyLine = copyLine.Replace(" " + item + " ", " <[TEMPORALEXP:" + item + "]> ");
-                    }
-
                 }
+                
+                if (matchWholePattern)
+                {
+                    copyLine = copyLine.Replace(item, " <[TEMPORALEXP:" + item.Trim() + "]> ");
+                }
+                else
+                {
+                    copyLine = copyLine.Replace(" " + item + " ", " <[TEMPORALEXP:" + item + "]> ");
+                }
+
+
 
             }
 
-            
+
             return copyLine;
         }
 

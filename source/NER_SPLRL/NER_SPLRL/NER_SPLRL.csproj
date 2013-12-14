@@ -59,6 +59,7 @@
     <Compile Include="LocationGazetteerSVK.cs" />
     <Compile Include="PersianLocationTagger.cs" />
     <Compile Include="PersianPersonTagger.cs" />
+    <Compile Include="PersianTimeTagger.cs" />
     <Compile Include="PersonGazetteerPER.cs" />
     <Compile Include="PersonGazetteerSVK.cs" />
     <Compile Include="Program.cs" />
