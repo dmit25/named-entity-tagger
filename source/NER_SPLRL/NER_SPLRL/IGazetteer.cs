@@ -11,24 +11,18 @@ namespace NER_SPLRL
     /// </summary>
     public abstract class IGazetteer : IRuleBasedMechanism
     {
-        protected IList<string> ItemList { get; set; }
-
+        protected ISet<string> ItemList { get; set; }
 
         public IGazetteer()
         {
-            ItemList = new List<string>();
-
+            ItemList = new HashSet<string>();
         }
 
-        public  abstract string TagLine(string line);
+        public abstract string TagLine(string line);
 
         public bool AddItem(string item)
         {
-            if (ItemList.Contains(item))
-                return false;
-
-            ItemList.Add(item);
-            return true;
+            return ItemList.Add(item);
         }
 
         public bool RemoveItem(string item)
@@ -58,9 +52,5 @@ namespace NER_SPLRL
                     sw.WriteLine(item);
             }
         }
-
-        
-
-
     }
 }

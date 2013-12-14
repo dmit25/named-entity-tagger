@@ -11,11 +11,11 @@ namespace NER_SPLRL
     /// </summary>
     abstract class IRegex : IRuleBasedMechanism
     {
-        protected IList<string> patterns { get; set; }
+        protected ISet<string> patterns { get; set; }
 
         public IRegex()
         {
-            patterns = new List<string>();
+            patterns = new HashSet<string>();
         }
 
         public abstract string TagLine(string line);
