@@ -14,8 +14,8 @@ namespace NER_SPLRL
         public SlovakPersonTagger()
         {
             this.lg = new PersonGazetteerSVK();
-            lg.LoadResources(@"E:\Saarland University Courses\software-project\low-resource-languages\WORD LISTS\Slovak\Sk_FE_names.txt");
-            lg.LoadResources(@"E:\Saarland University Courses\software-project\low-resource-languages\WORD LISTS\Slovak\Sk_MA_names.txt");
+            lg.LoadResources(@"Sk_FE_names.txt");
+            lg.LoadResources(@"Sk_MA_names.txt");
 
 
         }
@@ -34,7 +34,13 @@ namespace NER_SPLRL
             }
 
             corpusText = taggedtext;
+            
+            corpusText = JoinTwoTags(corpusText);
+        }
 
+        private string JoinTwoTags(string input)
+        {
+            return input.Replace("]> <[PERSON:", " ");
         }
         
     }
