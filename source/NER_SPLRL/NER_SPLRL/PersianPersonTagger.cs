@@ -13,7 +13,7 @@ namespace NER_SPLRL
         public PersianPersonTagger()
         {
             this.lg = new PersonGazetteerPER();
-            lg.LoadResources(@"person names-pruned.txt");
+            lg.LoadResources(@"E:\Saarland University Courses\software-project\low-resource-languages\WORD LISTS\Persian\person names-pruned.txt");
             
         }
 
