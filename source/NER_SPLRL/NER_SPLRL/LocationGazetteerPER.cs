@@ -22,23 +22,61 @@ namespace NER_SPLRL
         
         public override string TagLine(string line)
         {
-            // copy of input parameter (line)
-            //string copyLine = line;
+            if (line.Trim() == "")
+                return "";
 
-            // match only whole words
-            foreach (string country in ItemList)
+
+            string outputLine = "";
+
+            string[] del = new string[3];
+            del[0] = "] [";
+            del[1] = "] ";
+            del[2] = " [";
+
+            string[] sp = line.Split(del, StringSplitOptions.RemoveEmptyEntries);
+
+            foreach (string i in sp)
             {
-                //MatchCollection matches = Regex.Matches(line, String.Format(@"\b{0}\b", country));
-                //Regex.Replace(line, String.Format(@"\b{0}\b", country));
-                Regex exp = new Regex(String.Format(@"\b{0}\b", country));
-                line = exp.Replace(line, TAG_START + country + TAG_END);
+                if (i.Trim() == "")
+                    continue;
 
-                // replace all occurences of found location
-                //if (matches.Count != 0)
-                //    copyLine = copyLine.Replace(country, TAG_START + country + TAG_END);
+                string[] del1 = new string[1];
+                del1[0] = "/#/";
+                string[] wt = i.Split(del1, StringSplitOptions.RemoveEmptyEntries);
+                if (wt[1] != "N_SING")
+                {
+                    outputLine += wt[0] + " ";
+                    continue;
+                }
+                else
+                {
+                    bool per = false;
+
+                    foreach (string loc in ItemList)
+                    {
+
+                        if ((" " + wt[0] + " ").Contains(" " + loc + " "))
+                        {
+
+                            //wt[1] = "PERSON";
+
+                            per = true;
+
+                            break;
+                        }
+                    }
+
+                    if (per)
+                    {
+                        outputLine += TAG_START + wt[0] + TAG_END + " ";
+                    }
+                    else
+                    {
+                        outputLine += wt[0] + " ";
+                    }
+                }
             }
-
-            return line;
+            return outputLine;
         }
 
     }

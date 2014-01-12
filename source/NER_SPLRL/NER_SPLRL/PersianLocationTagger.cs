@@ -16,6 +16,8 @@ namespace NER_SPLRL
             this.lg = new LocationGazetteerPER();
             lg.LoadResources(@"E:\Saarland University Courses\software-project\low-resource-languages\WORD LISTS\Persian\cities.txt");
             lg.LoadResources(@"E:\Saarland University Courses\software-project\low-resource-languages\WORD LISTS\Persian\countries.txt");
+            lg.LoadResources(@"E:\Saarland University Courses\software-project\low-resource-languages\WORD LISTS\Persian\other-locations.txt");
+            
 
 
         }
