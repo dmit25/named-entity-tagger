@@ -1,28 +1,22 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace NER_SPLRL
 {
-    class SlovakLocationTagger : INETagger
+    class SlovakTimeTagger : INETagger
     {
         private IRuleBasedMechanism lg;
 
-        public SlovakLocationTagger()
+        public SlovakTimeTagger()
         {
-            this.lg = new LocationGazetteerSVK();
-            lg.LoadResources(@"Sk_Cities.txt");
-            lg.LoadResources(@"Sk_Countries.txt");
-
-
+            lg = new TimeRegexSVK();
+            lg.LoadResources("Sk_Time_Regex.txt");
         }
-
+        
         public override void TagCorpus()
         {
-
             string filetext = corpusText;
             string taggedtext = "";
 
@@ -34,8 +28,6 @@ namespace NER_SPLRL
             }
 
             corpusText = taggedtext;
-
         }
-        
     }
 }

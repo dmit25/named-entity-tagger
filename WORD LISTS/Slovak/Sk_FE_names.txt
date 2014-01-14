@@ -16,7 +16,6 @@ Dorota
 Vanda
 Zoja
 Perla
-Ida
 Liana
 Vlasta
 Lívia
@@ -40,7 +39,6 @@ Dana
 Danica
 Jela
 Jarmila
-Lea
 Anastázia
 Galina
 Lesana

@@ -5,7 +5,6 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace NER_SPLRL
 {
@@ -25,7 +24,7 @@ namespace NER_SPLRL
             {
                 string text = File.ReadAllText(fileAddress);
 
-                text = " " + text.Replace("\n", "\n ");
+                //text = " " + text.Replace("\n", "\n ");
 
                 corpusText = text;
 

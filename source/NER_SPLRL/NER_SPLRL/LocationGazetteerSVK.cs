@@ -27,7 +27,8 @@ namespace NER_SPLRL
             "ská",
             "ej",
             "ú",
-            "é"
+            "é",
+            "ou"
         };
 
 
@@ -47,7 +48,7 @@ namespace NER_SPLRL
                 string exp = MakeRegex(country);
 
                 // match only whole words with all suffixes, which length is less 4
-                MatchCollection matches = Regex.Matches(line, exp);
+                MatchCollection matches = Regex.Matches(copyLine, exp);
 
                 // eliminate duplicate words
                 HashSet<string> set = new HashSet<string>();
@@ -79,16 +80,16 @@ namespace NER_SPLRL
 
             // if location name contains only one word
             if (split.Length == 1)
-                return "\\b" + country.Substring(0, country.Length - 1) + "(\\w){1,3}\\b";
+                return "\\b(?<!:)" + country.Substring(0, country.Length - 1) + "(\\w){1,3}(?!])\\b";
 
             StringBuilder result = new StringBuilder();
 
             // if location name contains multiple words
             foreach (string s in split)
             {
-                result.Append("\\b");
+                result.Append("\\b(?<!:)");
                 result.Append(s.Substring(0, s.Length - 1));
-                result.Append("(\\w){1,3}\\b");
+                result.Append("(\\w){1,3}(?!])\\b");
                 result.Append(" ");
             }
 
