@@ -80,7 +80,7 @@ namespace NER_SPLRL
 
             // if location name contains only one word
             if (split.Length == 1)
-                return "\\b(?<!:)" + country.Substring(0, country.Length - 1) + "(\\w){1,3}(?!])\\b";
+                return "\\b(?<!:)" + country.Substring(0, country.Length - 1) + "(\\w){1,4}(?!])\\b";
 
             StringBuilder result = new StringBuilder();
 

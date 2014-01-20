@@ -16,9 +16,15 @@ namespace NER_SPLRL
             {
                 MatchCollection matches = Regex.Matches(copyLine, regex, RegexOptions.IgnoreCase);
 
+                HashSet<string> set = new HashSet<string>();
                 foreach (var time in matches)
                 {
-                    copyLine = copyLine.Replace(time.ToString(), "<[TEMPORALEXP:" + time.ToString() + "]>");
+                    set.Add(time.ToString());
+                }
+
+                foreach (var time in set)
+                {
+                    copyLine = copyLine.Replace(time, "<[TEMPORALEXP:" + time + "]>");
                 }
             }
 

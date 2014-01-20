@@ -18,7 +18,8 @@ namespace NER_SPLRL
             "ý",
             "í",
             "in",
-            "ov"
+            "ov",
+            "Marec"
         };
 
         public PersonGazetteerSVK(): base()
@@ -50,6 +51,7 @@ namespace NER_SPLRL
                     if (IsAdjective(foundPersons))
                         continue;
 
+                    // surname prediction
                     int index = line.IndexOf(foundPersons);
                     string surname = line.Substring(index + foundPersons.Length);
                     if (surname.Length > 1)
