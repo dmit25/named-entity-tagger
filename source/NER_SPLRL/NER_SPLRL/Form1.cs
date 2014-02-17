@@ -92,6 +92,7 @@ namespace NER_SPLRL
 
         private void button5_Click(object sender, EventArgs e)
         {
+            textBox1.Text = textBox1.Text.Replace("ی", "ي");
             INETagger.setCorpus(textBox1.Text);
 
             
