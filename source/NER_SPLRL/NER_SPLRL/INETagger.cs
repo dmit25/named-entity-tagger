@@ -10,10 +10,26 @@ namespace NER_SPLRL
 {
     public abstract class INETagger
     {
-        protected string corpusText = "";
+        protected static string corpusText = "";
         private string corpusAddress = "";
         private IRuleBasedMechanism rbm;
         private int tagsNumber;
+
+
+        public static void setCorpus (string text)
+        {
+            corpusText = text;
+        }
+
+        public static string getCorpus()
+        {
+            return corpusText;
+        }
+
+        public void ChangeGazetteer(IRuleBasedMechanism gaz)
+        {
+            rbm = gaz;
+        }
 
         //This method could be called several times to add more than one file to the corpus.
         public void LoadCorpus(string fileAddress)

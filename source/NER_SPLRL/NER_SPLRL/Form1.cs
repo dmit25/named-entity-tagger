@@ -12,9 +12,28 @@ namespace NER_SPLRL
 {
     public partial class Form1 : Form
     {
+
+        private PersianLocationTagger plt;
+        private SlovakLocationTagger slt;
+        private PersianPersonTagger ppt;
+        private SlovakPersonTagger spt;
+        private PersianTimeTagger ptt;
+        private SlovakTimeTagger stt;
+
         public Form1()
         {
             InitializeComponent();
+
+            plt = new PersianLocationTagger();
+            slt = new SlovakLocationTagger();
+            ppt = new PersianPersonTagger();
+            spt = new SlovakPersonTagger();
+            ptt = new PersianTimeTagger();
+            stt = new SlovakTimeTagger();
+
+
+            
+        
         }
 
         //persianLocationTaggerButton_click
@@ -65,7 +84,53 @@ namespace NER_SPLRL
 
         private void button3_Click(object sender, EventArgs e)
         {
-            //todo
+            SlovakTimeTagger ptt = new SlovakTimeTagger();
+            ptt.LoadCorpus(@"C:\Users\Omid\Desktop\slovak-text.txt");
+            ptt.TagCorpus();
+            ptt.SaveCorpus(@"C:\Users\Omid\Desktop\slovak-text-ttagged.txt");
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            INETagger.setCorpus(textBox1.Text);
+
+            
+
+            if(radioButton1.Checked)//slovak
+            {
+
+                slt.TagCorpus();
+                spt.TagCorpus();
+                stt.TagCorpus();
+
+
+            }else//persian
+            {
+                plt.TagCorpus();
+                ppt.TagCorpus();
+                ptt.TagCorpus();
+
+            }
+
+            string temporaltext = "";
+            temporaltext = INETagger.getCorpus();
+            temporaltext = temporaltext.Replace("<[LOCATION:", "<font color=\"blue\">");
+            temporaltext = temporaltext.Replace("<[PERSON:", "<font color=\"red\">");
+            temporaltext = temporaltext.Replace("<[TEMPORALEXP:", "<font color=\"green\">");
+            temporaltext = temporaltext.Replace("]>", "</font>");
+
+
+
+            var webBrowser = new WebBrowser();
+            webBrowser.CreateControl(); // only if needed
+            webBrowser.DocumentText = temporaltext;
+            while (webBrowser.DocumentText != temporaltext)
+            Application.DoEvents();
+            webBrowser.Document.ExecCommand("SelectAll", false, null);
+            webBrowser.Document.ExecCommand("Copy", false, null);
+            richTextBox1.Clear();
+            richTextBox1.Paste();
+
         }
     }
 }

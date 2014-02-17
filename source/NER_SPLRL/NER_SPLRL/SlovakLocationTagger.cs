@@ -14,8 +14,8 @@ namespace NER_SPLRL
         public SlovakLocationTagger()
         {
             this.lg = new LocationGazetteerSVK();
-            lg.LoadResources(@"Sk_Cities.txt");
-            lg.LoadResources(@"Sk_Countries.txt");
+            lg.LoadResources(@"E:\Saarland University Courses\software-project\low-resource-languages\WORD LISTS\Slovak\Sk_Cities.txt");
+            lg.LoadResources(@"E:\Saarland University Courses\software-project\low-resource-languages\WORD LISTS\Slovak\Sk_Countries.txt");
 
 
         }

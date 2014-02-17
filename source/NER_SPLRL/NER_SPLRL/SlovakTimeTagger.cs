@@ -12,7 +12,7 @@ namespace NER_SPLRL
         public SlovakTimeTagger()
         {
             lg = new TimeRegexSVK();
-            lg.LoadResources("Sk_Time_Regex.txt");
+            lg.LoadResources(@"E:\Saarland University Courses\software-project\low-resource-languages\regular expressions\Slovak\Sk_Time_Regex.txt");
         }
         
         public override void TagCorpus()
